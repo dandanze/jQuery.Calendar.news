@@ -1,0 +1,35 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title>JS日历控件</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/jquery.calendar.css">
+</head>
+<body>  
+	<div class="demo">
+		<h4>实例一：2015年1月有彩蛋哦</h3>
+		<div id="dateNews"> </div> 
+		<h4>实例二：简洁、英文</h3>
+		<div id="dateNews2"> </div>
+	</div>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js"></script>
+<script src="js/jquery.calendar.js"></script>
+<script type="text/javascript"> 
+$(function(){
+	//demo1 中文，有新闻事件
+	$("#dateNews").Calendar({
+		news:[{year:2015,month:1,day:10,ev:"毕加索博物馆耗资七千万美元翻新后重新开放"},
+			{year:2015,month:1,day:20,ev:"六旬老汉研读古籍自制“诸葛连弩”可六箭齐发"},
+			{year:2015,month:2,day:2,ev:"加拿大女子偷窃古城文物心中不安半世纪终归还"},
+			{year:2015,month:2,day:12,ev:"中国木雕博物馆在浙江东阳开馆"},
+			{year:2015,month:3,day:4,ev:"黑龙江穆棱发现距今上万年旧石器历史文化遗址"}],
+	});
+	//demo2 英文、简洁款
+	$("#dateNews2").Calendar({
+		theme:"simple",
+		language:"en"
+	});
+})
+</script>
+</body>
+</html>

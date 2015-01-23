@@ -1,0 +1,83 @@
+.CalendarBox { 
+	width:400px;
+	font-family:Verdana; 
+	border:solid 1px #CCCCCC; 
+	text-align:center; 
+	padding:10px; 
+	line-height:2.5em; 
+} 
+.CalendarBox a{ 
+	color:#0066CC; 
+} 
+.CalendarBox table{ 
+	width:100%; 
+	border:0; 
+	border-collapse:collapse;
+} 
+.CalendarBox table thead{
+	color:#B38B45;
+	background:#F4D8A6;
+	font-size:16px;
+	border:solid 1px #E0DBD5;
+} 
+
+.CalendarBox table td { 
+	font-size: 14px; 
+	border:solid 1px #E0DBD5;
+	background:#FEFEFE
+} 
+
+.CalendarPre{ 
+	cursor:pointer; 
+	float:left; 
+	padding-right:5px; 
+} 
+.CalendarNext{ 
+	cursor:pointer; 
+	float:right; 
+	padding-right:5px; 
+} 
+.CalendarBox td.onToday { 
+	font-weight:bold; 
+	color:#fff; 
+	background:#FFBB00;
+} 
+.CalendarBox td.hasEvent{
+	text-decoration:none;
+	background:#E52A00;
+	color:#fff;
+	cursor:pointer;
+}
+.CalendarEvent{
+	position:absolute;
+	left:450px;
+	top:0;
+	display:block;
+	clear: both;
+}
+.CalendarEvent ul{padding: 0;margin: 0}
+.CalendarEvent li{line-height:30px;}
+.CalendarBox{
+	font-size:16px;
+}
+#dateNews{
+	position:relative;
+}
+/*simple*/
+.CalendarBox.simple thead{
+	background:none;border:none;
+	border-top:solid 1px #E0DBD5;
+	border-bottom:solid 1px #E0DBD5;
+	font-weight:normal;
+	color:#888
+}
+.CalendarBox.simple table td{
+	border:none
+}
+.CalendarBox.simple table td:nth-child(6n+1){
+	color:red
+}
+.CalendarBox.simple table td.onToday{
+	background:#E0DBD5;
+	color:#222
+}
